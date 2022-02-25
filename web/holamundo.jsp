@@ -1,9 +1,3 @@
-<%-- 
-    Document   : holamundo
-    Created on : 12-sep-2019, 13:25:10
-    Author     : raznara
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%! String valor = "Mundo";%>
 <!DOCTYPE html>
@@ -11,85 +5,76 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>
     <body>
-        <!-- ejercicio 1: comentario en HTML -->
-        <%
+        <div class="d-flex flex-column justify-content-center align-items-center m-5">
+            <!-- comentario en HTML -->
+            <%
+                String nombre = "Repeticiones";
+                // comentario en Java
+                for (int i = 1; i <= 3; i++) {
+                    /* comentario en java
+                    multiline
+                     */
+            %>                            
+            <h3>3 Repeticiones</h3>
+            <% } %>    
+            <hr>
+            <!-- ejercicio -->
+            <%
+                for (int i = 1; i <= 4; i++) {
+                    out.print("<h3>4 Repeticiones</h3>");
+                }
+            %>
+            <hr>                      
+            <!-- ejercicio variables -->
+            <%
+                for (int i = 1; i <= 10; i++) {
+                    out.println("<h6>EL valor de i es: " + i + "</h6>");
+                }
+            %>
+            <hr>               
+            <!-- ejercicio variables -->
+            <%
+                // comentario en Java
+                for (int i = 1; i <= 10; i++) {
+                    /* comentario en java
+                    multiline
+                     */
+            %>                            
+            <h6>El valor de i es ... <%=i%></h6>
+            <% }%>  
+            <hr>         
+            <!-- ejercicio variables e if -->
+            <%
+                // comentario en Java
+                for (int i = 1; i <= 10; i++) {
+                    /* comentario en java
+                    multiline
+                     */
+                    if (i < 5) {
+            %>                            
+            <h2>El valor de i es ... <%=i%></h2>
+            <% } else {%>  
+            <h2>******** El valor de i es ... <%=i%></h2>
+            <% }
+                }%>
 
-            String nombre = "Rafa";
+            <hr>         
+            <h1>Hola <%=valor%></h1>
 
-            // comentario en Java
-            for (int i = 1; i <= 10; i++) {
-                /* comentario en java
-                multiline
-                 */
-        %>                            
-        <h1>Rafa es el mejor</h1>
-        <% } %>    
-        <!-- ejercicio 2 -->
-        <%
-            for (int i = 1; i <= 10; i++) {
-                out.print("<h1>Rafa es el mejor</h1>");
-            }
-        %>
-        <!-- ejercicio 3 -->
-        <%
-            for (int i = 1; i <= 10; i++) {
-                out.println("<h1>Rafa es el mejor</h1>");
-            }
-        %>
-        <h1>ejercicio 4</h1>
-        <!-- ejercicio 4 variables -->
-        <%
-            for (int i = 1; i <= 10; i++) {
-                out.println("<h1>EL valor de i es: " + i + "</h1>");
-            }
-        %>
-
-        <!-- ejercicio 5 variables -->
-        <h1>ejercicio 5</h1>
-        <%
-            // comentario en Java
-            for (int i = 1; i <= 10; i++) {
-                /* comentario en java
-                multiline
-                 */
-        %>                            
-        <h1>El valor de i es ... <%=i%></h1>
-        <% }%>  
-
-        <!-- ejercicio 6 variables e if -->
-        <h1>ejercicio 6</h1>
-        <%
-            // comentario en Java
-            for (int i = 1; i <= 10; i++) {
-                /* comentario en java
-                multiline
-                 */
-                if (i < 5) {
-        %>                            
-        <h1>El valor de i es ... <%=i%></h1>
-        <% } else {%>  
-        <h1>******** El valor de i es ... <%=i%></h1>
-        <% }
-            }%>
-
-
-        <h1>Hola <%=valor%></h1>
-
-
-        <%@include file="incluir_estatica.jsp" %>  <!-- estática: en tiempo de compilacion -->
-
-        
-        
-        <% String command = "hola"; %>
-        <!-- dinámica: en tiempo de ejecución -->   
-        <jsp:include page="incluir_dinamica.jsp" flush="true">                      
-            <jsp:param name="p1" value="<%=command%>" />                
-            <jsp:param name="p2" value="Rafa" /> 
-        </jsp:include>
-        
-        
-        
+        </div>
+        <div class="d-flex flex-column justify-content-left m-5">
+            <%@include file="incluir_estatica.jsp" %>  <!-- estática: en tiempo de compilacion -->
+            <hr>
+            <% String command = "hola";%>
+            <!-- dinámica: en tiempo de ejecución -->   
+            <jsp:include page="incluir_dinamica.jsp" flush="true">                      
+                <jsp:param name="p1" value="<%=command%>" />                
+                <jsp:param name="p2" value="Rafa" /> 
+            </jsp:include>
+            <a href="index.html">Volver al inicio</a>
+        </div>
     </body>
 </html>
