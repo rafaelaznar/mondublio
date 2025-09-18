@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
 <%
-    String user = (String) session.getAttribute("user");
-    if (user == null) {
+    String username = (String) request.getSession().getAttribute("username");
+    if (username == null) {
         response.sendRedirect("login.jsp");
         return;
     }
@@ -20,9 +20,9 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card shadow">
                     <div class="card-body text-center">
-                        <h2 class="card-title mb-4">Bienvenido, <%= user %>!</h2>
+                        <h2 class="card-title mb-4">Bienvenido, <%= username %>!</h2>
                         <p class="mb-4">Has accedido a la zona privada.</p>
-                        <form method="post" action="logout">
+                        <form method="post" action="LogoutServlet">
                             <button type="submit" class="btn btn-danger">Cerrar sesión</button>
                         </form>
                     </div>

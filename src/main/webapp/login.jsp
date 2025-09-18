@@ -14,7 +14,7 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Iniciar sesión</h2>
-                        <form method="post" action="auth">
+                        <form method="post" action="LoginServlet">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Usuario</label>
                                 <input type="text" class="form-control" id="username" name="username" required>
@@ -27,12 +27,21 @@
                                 <button type="submit" class="btn btn-primary">Entrar</button>
                             </div>
                         </form>
-                        <% String error = request.getParameter("error");
+                        <%  String error = request.getParameter("error");
+                            String registrado = request.getParameter("registrado");
                            if (error != null) { %>
-                        <div class="alert alert-danger mt-3" role="alert">
-                            Usuario o contraseña incorrectos.
-                        </div>
+                                <div class="alert alert-danger mt-3 text-center" role="alert">
+                                    Usuario o contraseña incorrectos.
+                                </div>
+                        <% } else if (registrado != null) { %>
+                                <div class="alert alert-success mt-3 text-center" role="alert">
+                                    Usuario registrado correctamente.
+                                </div>
                         <% } %>
+
+                        <div class="text-center">
+                            <a href="register.jsp">No tienes cuenta? Create una haciendo click aquí</a>
+                        </div>
                     </div>
                 </div>
             </div>

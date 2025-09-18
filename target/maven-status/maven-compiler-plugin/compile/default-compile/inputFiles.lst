@@ -1,6 +1,7 @@
-/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Logout.java
-/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Conexion.java
-/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Auth.java
-/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Aleatorio.java
-/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Holamundo.java
-/home/raznara/Proyectos/mondublio/src/main/java/net/ausiasmarch/servlet/Session.java
+c:\Users\ariel\workspace\git-repositories\mondublio\src\main\java\net\ausiasmarch\servlet\Conexion.java
+c:\Users\ariel\workspace\git-repositories\mondublio\src\main\java\net\ausiasmarch\servlet\Holamundo.java
+c:\Users\ariel\workspace\git-repositories\mondublio\src\main\java\net\ausiasmarch\servlet\LogoutServlet.java
+c:\Users\ariel\workspace\git-repositories\mondublio\src\main\java\net\ausiasmarch\servlet\Aleatorio.java
+c:\Users\ariel\workspace\git-repositories\mondublio\src\main\java\net\ausiasmarch\servlet\Session.java
+c:\Users\ariel\workspace\git-repositories\mondublio\src\main\java\net\ausiasmarch\servlet\LoginServlet.java
+c:\Users\ariel\workspace\git-repositories\mondublio\src\main\java\net\ausiasmarch\servlet\RegisterServlet.java

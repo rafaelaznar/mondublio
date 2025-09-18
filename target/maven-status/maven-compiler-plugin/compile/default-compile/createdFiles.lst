@@ -1,6 +1,7 @@
-net/ausiasmarch/servlet/Holamundo.class
-net/ausiasmarch/servlet/Logout.class
-net/ausiasmarch/servlet/Auth.class
-net/ausiasmarch/servlet/Conexion.class
-net/ausiasmarch/servlet/Aleatorio.class
-net/ausiasmarch/servlet/Session.class
+net\ausiasmarch\servlet\LoginServlet.class
+net\ausiasmarch\servlet\Holamundo.class
+net\ausiasmarch\servlet\Aleatorio.class
+net\ausiasmarch\servlet\LogoutServlet.class
+net\ausiasmarch\servlet\RegisterServlet.class
+net\ausiasmarch\servlet\Conexion.class
+net\ausiasmarch\servlet\Session.class
