@@ -29,6 +29,7 @@
                         </form>
                         <%  String error = request.getParameter("error");
                             String registrado = request.getParameter("registrado");
+                            
                            if (error != null) { %>
                                 <div class="alert alert-danger mt-3 text-center" role="alert">
                                     Usuario o contraseña incorrectos.

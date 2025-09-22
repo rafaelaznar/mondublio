@@ -1,5 +1,18 @@
-<%@page import="java.util.Random"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.util.Random"%>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    int max = 0;
+    int min = 0;
+    try{
+
+        max = Integer.parseInt(request.getParameter("superior"));
+        min = Integer.parseInt(request.getParameter("inferior"));
+
+    }catch(Exception e){
+        response.sendRedirect("formulario.html");
+        return;
+    }
+%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,8 +29,6 @@
                         <div class="card-body text-center">
                             <h1 class="card-title mb-4">Generación de números aleatorios</h1>
                             <%                                
-                                int max = Integer.parseInt(request.getParameter("superior"));
-                                int min = Integer.parseInt(request.getParameter("inferior"));
                                 // comprobar que max es mayor que min
                                 if (max < min) {
                             %>

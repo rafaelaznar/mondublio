@@ -2,12 +2,12 @@ package net.ausiasmarch.servlet;
 
 import java.io.IOException;
 import java.util.HashMap;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
@@ -17,7 +17,7 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         HashMap<String, String> users = (HashMap<String, String>) getServletContext().getAttribute("users");
-
+       // String s = users.get(username);
         if (users != null && password.equals(users.get(username))) {
             request.getSession().setAttribute("username", username);
             response.sendRedirect("welcome.jsp");

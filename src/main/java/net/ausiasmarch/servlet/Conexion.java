@@ -26,5 +26,6 @@ public class Conexion extends HttpServlet {
         request.setAttribute("nombre", nombre);
         //redirigir a la jsp
         request.getRequestDispatcher("conexion.jsp").forward(request, response);
+        //response.sendRedirect("conexion.jsp");
     }
 }

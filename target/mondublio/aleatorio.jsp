@@ -1,5 +1,5 @@
-<%@page import="java.util.Random"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.util.Random"%>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>

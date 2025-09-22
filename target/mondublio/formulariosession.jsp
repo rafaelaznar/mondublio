@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,20 +27,7 @@
                                     <button type="submit" class="btn btn-primary">Enviar</button>
                                 </div>
                             </form>
-                            <!-- Mostrar los parámetros debajo del formulario -->
-                            <%
-                                String sup = request.getParameter("superior");
-                                String inf = request.getParameter("inferior");
-                                if (sup != null && inf != null) {
-                            %>
-                                <div class="alert alert-info mt-4">
-                                    <strong>Parámetros recibidos:</strong><br>
-                                    Límite superior: <%= sup %><br>
-                                    Límite inferior: <%= inf %>
-                                </div>
-                            <%
-                                }
-                            %>
+
                             <!-- Mostrar los parámetros de sesión debajo del formulario -->
                             <%
                                 Integer supsession = (Integer) request.getSession().getAttribute("superior");
