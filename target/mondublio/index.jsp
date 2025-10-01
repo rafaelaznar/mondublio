@@ -54,6 +54,14 @@
                                     Acceso al sistema (Login)<br>
                                     <span class="small text-warning">Mantenimiento de sesión</span>
                                 </a>
+                                <a href="traza" class="btn btn-outline-primary">
+                                    Esto lo ha hecho el grupo2<br>
+                                    <span class="small text-warning">Esto es traza</span>
+                                </a>
+                                <a href="trazaapp" class="btn btn-outline-primary">
+                                    Esto lo ha hecho el grupo2<br>
+                                    <span class="small text-warning">esto es traza2</span>
+                                </a>
 
                             </div>
                         </div>
