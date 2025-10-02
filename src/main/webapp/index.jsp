@@ -62,7 +62,7 @@
                                     Esto lo ha hecho el grupo2<br>
                                     <span class="small text-warning">esto es traza2</span>
                                 </a>
-<!-- otro comentario -->
+<!-- otro comentario de rafa -->
 
                             </div>
                         </div>
